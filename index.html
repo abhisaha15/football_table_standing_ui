@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football standings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" />
+    <link rel="stylesheet" type="text/css" href="./statics/css/page.css">
+</head>
+
+<body class="bg">
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+
+
+                    <div class="col-md-4">
+                        <select class="form-control form-select-md" id="league_nm_selected">
+                            <option selected value="epl">EPL</option>
+                            <option value="ligue-1">Ligue-1</option>
+                            <option value="bundesliga">Bundesliga</option>
+                            <option value="serie-a">Serie-A</option>
+                            <option value="laliga">Laliga</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <input class="form-control form-control-md" type="number" id="year_selected" value="2022">
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-md btn-outline-warning " id="filter-standing"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg></button>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="col-md-6">
+
+                <button class="btn btn-sm btn-outline-warning" id="btn-1" data-id="laliga 2022">Laliga 2022</button>
+                <button class="btn btn-sm btn-outline-warning" id="btn-2" data-id="ligue-1 2022">Ligue-1 2022</button>
+                <button class="btn btn-sm btn-outline-warning" id="btn-3" data-id="bundesliga 2022">Bundesliga
+                    2022</button>
+                <button class="btn btn-sm btn-outline-warning" id="btn-4" data-id="serie-a 2022">Serie-A 2022</button>
+                <button class="btn btn-sm btn-outline-warning" id="btn-5" data-id="epl 2022">EPL 2022</button>
+
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <!-- <h5 id="selected-year"></h5> -->
+                <div id="standings-grid"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-light">Designed and Developed by: <a href="https://github.com/abhisaha15"
+                    target="_blank">Abhishek
+                    Saha</a></span>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/gridjs-jquery/dist/gridjs.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./statics/js/app.js"></script>
+</body>
+
+</html>
